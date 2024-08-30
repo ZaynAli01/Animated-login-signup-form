@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <header class="position-fixed top-0 d-flex justify-content-between text-light w-100 p-3">
+        <h1 class="ms-5 logo">Logo</h1>
+        <nav>
+            <ul class="d-md-flex justify-content-between list-unstyled end-md-0">
+                <li class="">
+                    <a href="" class="text-decoration-none me-5 text-light fs-4">Home</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-decoration-none me-5 text-light fs-4">About</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-decoration-none me-5 text-light fs-4">Services</a>
+                </li>
+
+                <li>
+                    <a href="" class="text-decoration-none me-5 text-light fs-4">Contact</a>
+                </li>
+
+                <li>
+                    <button class="btn-login text-light p-s-e-3 me-5 fs-4" id="modal-open-btn">LogIn</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="wapper d-flex shadow" id="modal">
+            <span id="modal-close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-animation"></span>
+            <span class="bg-animation2"></span>
+            <div class="login-form" id="login-form">
+                <div class="login d-flex flex-column justify-content-center align-items-center p-4 mt-3">
+                    <h1 class="text-light display-4 mb-4">LogIn</h1>
+                    <form action="">
+                        <div class="input-box">
+                            <span class="icons"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" required>
+                            <label for="">Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icons"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" required>
+                            <label for="">Password</label>
+                        </div>
+
+                        <div class="remember-forget d-flex justify-content-between text-light fs-5">
+                            <label for="Remember-me">
+                                <input type="checkbox" id="Remember-me">
+                                Remember me
+                            </label>
+
+                            <a href="" class="text-decoration-none text-light">Forgot Password?</a>
+                        </div>
+
+                        <div class="login-btn mt-3">
+                            <button>Login</button>
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <div class="login-form-text text-end text-light mt-5 pe-5">
+                    <h1 class="display-4">Welcome Back !</h1>
+                    <p class="fs-4">Don't have an account ?</p>
+                    <button class="btn-register" id="register-btn">Sign Up</button>
+                </div>
+            </div>
+
+
+            
+            <div class="registeration-form">
+                <div class="login-form">
+                    <div class="register d-flex flex-column justify-content-center align-items-center p-4 mt-3">
+                        <h1 class="text-light display-4 mb-5">Sign Up</h1>
+                        <form action="">
+
+                            <div class="input-box">
+                                <span class="icons"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" required>
+                                <label for="">Username</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icons"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" required>
+                                <label for="">Email</label>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="icons"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" required>
+                                <label for="">Password</label>
+                            </div>
+
+                            <div class="remember-forget d-flex justify-content-between text-light fs-5">
+                                <label for="Agree">
+                                    <input type="checkbox" id="Agree">
+                                    Agree to the all trems & conditions
+                                </label>
+                            </div>
+
+                            <div class="login-btn mt-3">
+                                <button>Sign Up</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                    <div class="register-form-text text-start text-light ps-5 mt-5">
+                        <h1 class="display-4">Welcome Back !</h1>
+                        <p class="fs-4">Already have an account ?</p>
+                        <button class="btn-register" id="login-btn">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

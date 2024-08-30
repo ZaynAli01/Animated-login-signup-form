@@ -1,0 +1,328 @@
+
+
+body{
+    background: url(../../websites/images/form2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.097);
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    pointer-events: none !important;
+    user-select: none;
+}
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    border: 20px;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -6px;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+    background-color:rgb(0, 177, 193) ;
+}
+
+
+nav ul li a:hover{
+    color: rgb(0, 234, 255) !important;
+}
+
+.btn-login{
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    width: 140px;
+    border-radius: 8px;
+}
+
+.btn-login:hover{
+    background-color: rgb(0, 177, 193) ;
+    border: 1px solid rgb(0, 177, 193);
+}
+
+.wapper{
+    width: 900px;
+    height: 500px;
+    background-color:rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0);
+    transition: .7s ease;   
+}
+
+.wapper.active-pop{
+    transform: scale(1);
+    transition: .7s ease;
+}
+
+.login-form-text{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    filter: blur(0px);
+    transition: .7s ease;
+    transition-delay: 1.3s;
+}
+
+.login{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    filter: blur(0px);
+    transition: .7s ease;
+    transition-delay: 1.3s;
+}
+
+.wapper .bg-animation{
+   opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:rgba(0, 177, 193, 0.485);
+    border-bottom: 1px solid rgb(0, 234, 255);
+    height: 600px;
+    width: 1000px;
+    transform: rotate(10deg) skewY(34deg);
+    transform-origin: bottom right;
+    transition:  .9s ease;
+    transition-delay: .9s;
+    
+}
+
+.wapper .bg-animation2{
+   opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 177, 193, 0.485);
+    border-bottom: 1px solid rgb(0, 234, 255);
+    height: 637px;
+    width: 1000px;
+    transform: rotate(0) skewY(0);
+    transform-origin: left top;
+    transition:  1.3s ease;
+    transition-delay: .3s;
+}
+
+.input-box input{
+    width: 100%;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: transparent; 
+    padding: 10px 35px 10px 10px;
+    outline: none;
+    position: relative;
+    font-size: 20px;
+}
+
+
+.input-box input:focus~label,.input-box input:valid~label{
+    
+    transform: translateY(-85px);
+    transition: transform .4s ease;
+    color: rgb(0, 234, 255);
+}
+
+.input-box input:focus{
+    border: 3px solid rgb(0, 234, 255);
+}
+
+
+.input-box input:focus~span i{
+    color: rgb(0, 234, 255);
+}
+
+
+.input-box label{
+    transform: translateY(-45px);
+    padding-left: 13px;
+    color: white;
+    font-size: 21px;
+    position: relative;
+    transition: transform .4s ease;
+    z-index: 2;
+}
+
+.login-btn button{
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 25px;
+    border: none;
+}
+
+.login-btn button:hover{
+    background-color: rgb(0, 234, 255); 
+    transition: .7s;
+}
+
+
+
+.btn-register{
+    width: 115px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px; 
+    color: rgb(0, 0, 0);
+}
+
+.btn-register:hover{
+    background-color: rgb(0, 234, 255);
+    transition: .5s;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline !important;
+}
+
+.register-link p a:hover{
+    text-decoration: underline !important;
+}
+
+.input-box{
+    position: relative;
+}
+
+.icons{
+    position: absolute;
+    color: white;
+    right: 0;
+    transform: translateY(10px);
+    padding-right: 15px;
+}
+
+#modal-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 177, 193, 0.485);
+    height: 40px;
+    width: 45px;
+    border-bottom-left-radius: 20px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#modal-close-btn:hover{
+    background-color: rgba(0,234, 255);
+    color: black;
+    transition: .5s;
+}
+
+.register{
+    transform: translate(400px ,200px);
+    transition: .7s ease;
+    filter: blur(10px);
+    
+}
+
+.register-form-text{
+    transform: translate(-400px , -60px);
+    transition: .7s ease;
+    filter: blur(10px);
+}
+
+.wapper.active{
+    height: 580px;
+    transition: .7s ease;
+}
+
+.wapper.active .login{
+    transform: translate(-400px ,200px);
+    transition: .7s ease;
+  
+    filter: blur(10px);
+}
+
+.wapper.active .login-form-text{
+    transform: translate(400px ,-100px);
+    transition: .7s ease;
+    filter: blur(10px);
+}
+
+.wapper.active .bg-animation{
+    transform: rotate(0) skewY(0);
+    transition: 1s ease;
+    transition-delay: .3s;
+    opacity: 0;
+}
+
+.wapper.active .bg-animation2{
+    opacity: 1;
+    transform: rotate(0deg) skewY(-48deg);
+    transition: 1.2s ease;
+    transition-delay: .9s;
+}
+
+.wapper.active .register{
+    transform: translate(0 ,0);
+    transition: .7s ease;
+    transition-delay: 1.3s;
+    filter: blur(0);
+}
+
+.wapper.active .register-form-text{
+    transform: translate(0 ,0);
+    transition: .7s ease;
+    transition-delay: 1.3s;
+    filter: blur(0);
+}
+
+/* ############################ Register Form ################################### */
+
+
+.register-form-text{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 40%;
+}
+
+.register{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    right: 0;
+}
+
+.remember-forget label input{
+    accent-color: rgba(0, 177, 193, 0.485);
+    transform: scale(1.2);
+}
