@@ -21,28 +21,28 @@
 
 <body>
 
-    <header class="position-fixed top-0 d-flex justify-content-between text-light w-100 p-3">
+    <header class="position-fixed top-0 d-flex justify-content-between text-light w-100">
         <h1 class="ms-5 logo">Logo</h1>
-        <nav>
-            <ul class="d-md-flex justify-content-between list-unstyled end-md-0">
+        <nav class="d-flex align-items-center">
+            <ul class="d-md-flex list-unstyled mb-0">
                 <li class="">
-                    <a href="" class="text-decoration-none me-5 text-light fs-4">Home</a>
+                    <a href="" class="text-decoration-none me-5 text-light fs-6">Home</a>
                 </li>
 
                 <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-4">About</a>
+                    <a href="" class="text-decoration-none me-5 text-light fs-6">About</a>
                 </li>
 
                 <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-4">Services</a>
+                    <a href="" class="text-decoration-none me-5 text-light fs-6">Services</a>
                 </li>
 
                 <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-4">Contact</a>
+                    <a href="" class="text-decoration-none me-5 text-light fs-6">Contact</a>
                 </li>
 
                 <li>
-                    <button class="btn-login text-light p-s-e-3 me-5 fs-4" id="modal-open-btn">LogIn</button>
+                    <button class="btn-login text-light me-5 " id="modal-open-btn">LogIn</button>
                 </li>
             </ul>
         </nav>
@@ -54,11 +54,11 @@
             <span id="modal-close-btn"><i class="fa-solid fa-xmark"></i></span>
             <span class="bg-animation"></span>
             <span class="bg-animation2"></span>
-            <div class="login-form" id="login-form">
-                <div class="login d-flex flex-column justify-content-center align-items-center p-4 mt-3">
-                    <h1 class="text-light display-4 mb-4">LogIn</h1>
+            <div class="login-form d-flex justify-content-center align-items-center" id="login-form">
+                <div class="login d-flex flex-column justify-content-center p-2">
+                    <h1 class="text-light text-center mb-4">LogIn</h1>
                     <form action="">
-                        <div class="input-box">
+                        <div class="input-box mb-4">
                             <span class="icons"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" required>
                             <label for="">Email</label>
@@ -70,7 +70,7 @@
                             <label for="">Password</label>
                         </div>
 
-                        <div class="remember-forget d-flex justify-content-between text-light fs-5">
+                        <div class="remember-forget mt-2 d-flex justify-content-between text-light">
                             <label for="Remember-me">
                                 <input type="checkbox" id="Remember-me">
                                 Remember me
@@ -87,9 +87,9 @@
                 </div>
 
 
-                <div class="login-form-text text-end text-light mt-5 pe-5">
-                    <h1 class="display-4">Welcome Back !</h1>
-                    <p class="fs-4">Don't have an account ?</p>
+                <div class="login-form-text text-end text-light">
+                    <h1 class="display-5">Welcome Back !</h1>
+                    <p>Don't have an account ?</p>
                     <button class="btn-register" id="register-btn">Sign Up</button>
                 </div>
             </div>
@@ -98,23 +98,23 @@
             
             <div class="registeration-form">
                 <div class="login-form">
-                    <div class="register d-flex flex-column justify-content-center align-items-center p-4 mt-3">
-                        <h1 class="text-light display-4 mb-5">Sign Up</h1>
+                    <div class="register d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="text-light text-center mb-4">Sign Up</h1>
                         <form action="">
 
-                            <div class="input-box">
+                            <div class="input-box mb-4">
                                 <span class="icons"><i class="fa-solid fa-user"></i></span>
                                 <input type="text" required>
                                 <label for="">Username</label>
                             </div>
 
-                            <div class="input-box">
+                            <div class="input-box mb-4">
                                 <span class="icons"><i class="fa-solid fa-envelope"></i></span>
                                 <input type="email" required>
                                 <label for="">Email</label>
                             </div>
 
-                            <div class="input-box">
+                            <div class="input-box mb-2">
                                 <span class="icons"><i class="fa-solid fa-lock"></i></span>
                                 <input type="password" required>
                                 <label for="">Password</label>
@@ -135,9 +135,9 @@
                     </div>
 
 
-                    <div class="register-form-text text-start text-light ps-5 mt-5">
-                        <h1 class="display-4">Welcome Back !</h1>
-                        <p class="fs-4">Already have an account ?</p>
+                    <div class="register-form-text text-start text-light">
+                        <h1>Welcome Back !</h1>
+                        <p>Already have an account ?</p>
                         <button class="btn-register" id="login-btn">Login</button>
                     </div>
                 </div>
