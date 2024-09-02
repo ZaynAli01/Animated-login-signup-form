@@ -6,6 +6,10 @@ let openModalBtn = document.getElementById('modal-open-btn')
 let closeModalBtn = document.getElementById('modal-close-btn')
 let modal = document.getElementById('modal')
 let loginForm = document.getElementById('login-form')
+let signUpLink = document.getElementById('Sign-up-link')
+let loginLink = document.getElementById('login-link')
+let hangBurger = document.getElementById('hang-burger')
+let navBar = document.getElementById('nav-bar')
 
 
 openModalBtn.addEventListener('click', ()=>{
@@ -23,4 +27,20 @@ registerBtn.addEventListener('click', ()=>{
 loginBtn.addEventListener('click', ()=>{
     modal.classList.remove('active')
 })
+
+signUpLink.addEventListener('click', (e)=>{
+    e.preventDefault()
+    modal.classList.add('active')
+})
+
+loginLink.addEventListener('click', (e)=>{
+    e.preventDefault()
+    modal.classList.remove('active')
+})
+
+hangBurger.addEventListener('click', ()=>{
+    navBar.classList.add('active')
+})
+
+
 

@@ -1,6 +1,7 @@
 body {
     background: url(form2.jpg) no-repeat;
     background-size: cover;
+    object-fit: cover;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -87,17 +88,16 @@ nav ul li a:hover {
 }
 
 .wapper .bg-animation {
-    opacity: 1;
     position: absolute;
     right: 0;
     top: 0;
     background-color: rgba(0, 177, 193, 0.485);
     border-bottom: 1px solid rgb(0, 234, 255);
-    height: 400px;
-    width: 650px;
-    transform: rotate(5deg) skewY(40deg);
+    height: 460px;
+    width: 850px;
+    transform: rotate(11deg) skewY(38deg);
     transform-origin: bottom right;
-    transition: 1.2s ease;
+    transition: .9s ease;
     transition-delay: .9s;
 }
 
@@ -112,7 +112,7 @@ nav ul li a:hover {
     width: 850px;
     transform: rotate(0) skewY(0);
     transform-origin: left top;
-    transition: 1.3s ease;
+    transition: 1.2s ease;
     transition-delay: .3s;
 }
 
@@ -174,7 +174,7 @@ nav ul li a:hover {
     padding-right: 10px;
 }
 
-.icons i{
+.icons i {
     font-size: 13px;
 }
 
@@ -189,7 +189,8 @@ nav ul li a:hover {
     border: 3px solid rgb(0, 234, 255);
 }
 
-.remember-forget label,a{
+.remember-forget label,
+a {
     font-size: 14px;
 }
 
@@ -236,7 +237,7 @@ nav ul li a:hover {
     text-decoration: underline !important;
 }
 
-.login-form-text{
+.login-form-text {
     width: 50%;
     right: 0;
     margin-top: 60px;
@@ -259,7 +260,7 @@ nav ul li a:hover {
     z-index: 9999;
 }
 
-#modal-close-btn i{
+#modal-close-btn i {
     font-size: 20px;
 }
 
@@ -284,13 +285,12 @@ nav ul li a:hover {
 
 .wapper.active {
     height: 400px;
-    transition: .7s ease;
+    transition: .9s ease;
 }
 
 .wapper.active .login {
     transform: translate(-320px, 150px);
     transition: .7s ease;
-
     filter: blur(10px);
 }
 
@@ -349,3 +349,99 @@ nav ul li a:hover {
     right: 0;
 }
 
+.Sign-up-link {
+    display: none;
+}
+
+.hang-burger {
+    display: none;
+}
+
+
+
+
+
+/* ############################### media #################################### */
+
+@media only screen and (max-width: 767px) {
+
+    .wapper {
+        width: 600px;
+        height: 350px;
+        background-color: rgb(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgb(0, 234, 255);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        transform: scale(0);
+        transition: .7s ease;
+    }
+
+    
+    .wapper {
+        width: 280px;
+        height: 320px;
+        background-color: rgb(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgb(0, 234, 255);
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        transform: scale(0);
+        transition: .7s ease;
+    }
+
+    .wapper.active .login {
+        transform: translate(-300px, 100px);
+        transition: .7s ease;
+        filter: blur(10px);
+    }
+
+    .wapper.active {
+        height: 380px;
+        transition: .9s ease;
+    }
+
+    .wapper.active .register {
+        transform: translate(0, 0);
+        transition: .7s ease;
+        filter: blur(0);
+    }
+
+    .hang-burger {
+        display: block;
+    }
+
+    .register,
+    .login-form {
+        width: 100%;
+    }
+
+    .register form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: blur(0px);
+        transition: .7s ease;
+    }
+
+    .login-form-text,
+    .register-form-text,
+    .nav-bar-links,
+    .wapper .bg-animation,
+    .wapper .bg-animation2 {
+        display: none;
+    }
+
+    .Sign-up-link,
+    .nav-bar.active .nav-bar-links {
+        display: block;
+    }
+
+}
