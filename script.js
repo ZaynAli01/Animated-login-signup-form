@@ -14,11 +14,14 @@ let navBar = document.getElementById('nav-bar')
 
 openModalBtn.addEventListener('click', ()=>{
     modal.classList.add('active-pop')
+    navBar.classList.add('active')
 })
 
 closeModalBtn.addEventListener('click', ()=>{
     modal.classList.remove('active-pop')
+    navBar.classList.remove('active')
 })
+
 
 registerBtn.addEventListener('click', ()=>{
     modal.classList.add('active')

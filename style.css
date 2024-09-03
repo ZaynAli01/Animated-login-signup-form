@@ -364,19 +364,23 @@ a {
     display: none;
 }
 
-.hamburger-icons{
-    position: absolute;
-    right: 6%;
-    top: 7px;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-}
 
 #check{
     display: none;
 }
 
+.hamburger-icons .hamburger{
+    position: absolute;
+    right: 6%;
+    top: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icons .close-hamburger-btn{
+    display: none;
+}
 
 
 
@@ -448,16 +452,40 @@ a {
         display: block;
     }
 
-    .hamburger-icons{
+    .hamburger-icons .hamburger{
         display: block;
+        top: 10px;
+        right: 10%;
+        
     }
 
-    .close-hamburger-btn{
+    #check:checked~.hamburger-icons .hamburger{
         display: none;
+        transition: .2s ease;
     }
+
+    #check:checked~.hamburger-icons .close-hamburger-btn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10%;
+        transition: .2s ease;
+    }
+   
 
     #check:checked~.nav-bar{
         height: 150px; 
+        transition: .3s ease;
+    }
+    
+
+    #check:checked~.nav-bar.active{
+        height: 0;
+        transition: .3s ease;
+    }
+
+    #check:checked~.nav-bar.remove{
+        height: 0;
         transition: .3s ease;
     }
 
@@ -478,6 +506,7 @@ a {
     .nav-bar-links{
         display: block;
         text-align: center;
+        margin-left: 60px;
         transition: .3s ease;
     }
     
