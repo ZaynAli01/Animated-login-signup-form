@@ -24,26 +24,31 @@
     
     <header class="position-fixed top-0 d-flex justify-content-between text-light w-100">
         <h1 class="ms-5 logo">Logo</h1>
-        <span class="hang-burger pt-1 ms-5" id="hang-burger"><i class="fa-solid fa-bars"></i></span>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="hamburger-icons">
+            <i class="fa-solid fa-bars hamburger"></i>
+            <i class="fa-solid fa-x close-hamburger-btn"></i>
+        </label>
         <nav class="d-flex align-items-center nav-bar" id="nav-bar">
             <ul class="d-md-flex list-unstyled nav-bar-links mb-0">
-                <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-6">Home</a>
+                <li style="--i:0;">
+                    <a href="#" class="text-decoration-none me-5 text-light fs-6">Home</a>
                 </li>
 
-                <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-6">About</a>
+                <li style="--i:1;">
+                    <a href="#" class="text-decoration-none me-5 text-light fs-6">About</a>
                 </li>
 
-                <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-6">Services</a>
+                <li style="--i:2;">
+                    <a href="#" class="text-decoration-none me-5 text-light fs-6">Services</a>
                 </li>
 
-                <li>
-                    <a href="" class="text-decoration-none me-5 text-light fs-6">Contact</a>
+                <li style="--i:3;">
+                    <a href="#" class="text-decoration-none me-5 text-light fs-6">Contact</a>
                 </li>
 
-                <li>
+                <li style="--i:4;">
                     <button class="btn-login text-light me-5 " id="modal-open-btn">LogIn</button>
                 </li>
                 
